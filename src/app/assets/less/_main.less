@@ -1,0 +1,105 @@
+@import "_colors";
+@import "_variables";
+@import "_font-size";
+
+html {
+    font-family: @font-stack;
+    font-size: 62.5%;
+    height: @height-full;
+}
+
+body {
+    .font-size(14);
+    background-color: @white;
+    color: @dark-grey;
+    height: @height-full;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: @light-grey;
+    color: @dark-grey;
+    height: @height-footer;
+    line-height: @height-footer;
+    text-align: right;
+    padding: 0 20px;
+}
+
+.content-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto -50px;
+    min-height: 95%;
+    padding-bottom: @height-footer;
+    width: 100%;
+}
+
+/*
+ *
+ *	Page Default Styles
+ *
+ */
+.practice-container {
+    text-align: center;
+}
+
+.page-content {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.mdl-layout {
+    height: 100%;
+    overflow: hidden;
+}
+
+.mdl-layout__header {
+    background-color: @orange;
+}
+
+.mdl-layout__drawer-button:focus {
+    outline: none;
+}
+
+.mdl-main-color .mdl-button.mdl-button--colored {
+    color: @orange;
+}
+
+.mdl-button--fab.mdl-button--colored {
+    background-color: @button-colored;
+}
+
+.mdl-button--fab.mdl-button--colored:hover, .mdl-button--fab.mdl-button--colored:focus:not(:active), .mdl-button--fab.mdl-button--colored:active {
+    background-color: @button-hover;
+}
+
+.mdl-card {
+    display: inline-flex;
+    margin: 10px;
+}
+
+.mdl-fixed-pos {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.mdl-card__supporting-text {
+    height: 60px;
+    overflow-y: auto;
+}
+
+.mdl-layout-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.trash{
+    color: black;
+}

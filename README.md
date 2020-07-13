@@ -1,2 +1,6 @@
-# FE-BE-Basics
-Magento FE-BE Basic Course
+### Run the base project.
+
+```sh
+$ npm install
+$ gulp 
+```
