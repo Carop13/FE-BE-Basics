@@ -1,1 +1,15 @@
 <p class="chancho">PLP Chao</p>
+<ul>
+    {{#each products.items}}
+    <li>
+        <section class="product-container">
+            <div class="img-container">
+                <img src="{{this.img}}" />
+            </div>
+            <div class="product-info">
+                <a href="/plp"> {{this.name}}</a>
+            </div>
+        </section>
+    </li>
+    {{/each}}
+</ul>
