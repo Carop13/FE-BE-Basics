@@ -1,7 +1,6 @@
-<aside>
-    <ul>
-        {{#each categories.items}}
-        <li> <a href="/plp"> {{this}} </a> </li>
-        {{/each}}
-    </ul>
-</aside>
+<span class="material-icons mobile-icon">
+    filter_alt
+</span>
+<section class="filter-type">
+    {{> categories}}
+</section>

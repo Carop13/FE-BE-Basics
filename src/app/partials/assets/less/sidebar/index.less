@@ -1,0 +1,12 @@
+@import "module/_categories";
+
+& when (@media-common = true) {
+
+}
+
+// max: 1023px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .filter-type {
+      display: none;
+  }
+}

@@ -1,0 +1,27 @@
+& when (@media-common = true) {
+  .t2columns-left {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: @max-layout-width;
+    padding: 24px 16px;
+    width: 100%;
+
+    & > aside {
+      max-width: 320px;
+      width: 100%;
+    }
+    & > section {
+      width: 100%;
+    }
+  }
+}
+
+// max: 1023px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .t2columns-left {
+    aside {
+      display: none;
+    }
+  }
+}

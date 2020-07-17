@@ -1,6 +1,7 @@
 @import "less/_normalize";
 @import "less/_main";
-@import "less/_fonts";
+@import "less/variables/_fonts";
+@import "less/_responsive";
 /**
  *  Do not remove the comment below. It's the markers used by wiredep to inject
  *  LESS dependencies when defined in the bower.json of your dependencies
@@ -9,12 +10,18 @@
 // endbower
 
 html {
-  font-family: 'Heebo-Regular', sans-serif;
   font-size: 10px;
+  .FontRegular();
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+* {
+  box-sizing: border-box;
 }
 
 /**

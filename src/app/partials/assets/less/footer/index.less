@@ -1,0 +1,20 @@
+& when (@media-common = true) {
+  .footer {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .footer-links {
+    margin: auto;
+    max-width: @max-layout-width;
+    width: 100%;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  }
+}

@@ -1,5 +1,12 @@
-.cosa {
-  background-color: aqua;
-  display: flex;
-  justify-content: space-between;
+.header {
+  background-color: #333333;
+
+  & > section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    max-width: @max-layout-width;
+    margin: 0 auto;
+  }
 }

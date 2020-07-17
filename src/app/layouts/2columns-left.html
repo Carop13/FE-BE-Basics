@@ -11,9 +11,20 @@
 
     <link rel="stylesheet" href="{{root}}/index.css"/>
 </head>
-    <body class="alternate">
-        {{> header}}
-        {{> sidebar}}
-        {{> body}}
+    <body>
+        <header class="header">
+            {{> header}}
+        </header>
+        <main class="t2columns-left">
+            <aside>
+            {{> sidebar}}
+            </aside>
+            <section>
+                {{> body}}
+            </section>
+        </main>
+        <footer class="footer">
+            {{> footer}}
+        </footer>
     </body>
 </html>

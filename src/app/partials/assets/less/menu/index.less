@@ -1,0 +1,27 @@
+& when (@media-common = true) {
+  .menu ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    li {
+      padding: 0 16px;
+    }
+  }
+}
+
+// max: 1023px
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+  .menu {
+    display: none;
+  }
+}
+
+// max: 1024px
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+  .mobile-icon {
+    display: none;
+  }
+}
+

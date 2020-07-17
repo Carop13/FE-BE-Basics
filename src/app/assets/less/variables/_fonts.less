@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Heebo-Bold';
+  src: url('../../fonts/Heebo/Heebo-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Heebo-Regular';
+  src: url('../../fonts/Heebo/Heebo-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Heebo-Light';
+  src: url('../../fonts/Heebo/Heebo-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Heebo-Medium';
+  src: url('../../fonts/Heebo/Heebo-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-family__sans-serif: 'Heebo-Regular';
+
+.FontBold {
+  .fontTransform('Heebo-Bold');
+}
+
+.FontRegular {
+  .fontTransform('Heebo-Regular');
+}
+
+.FontLight {
+  .fontTransform('Heebo-Light');
+}
+
+.FontMedium {
+  .fontTransform('Heebo-Medium');
+}
+
+.fontTransform(@font) {
+  font-family: @font, @font-family__sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
